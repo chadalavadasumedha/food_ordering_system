@@ -60,7 +60,7 @@
                     <div class="cart-row">
                         <div style="flex:2"><img class="row-image" src="{{ item.item.imageURL }}"></div>
                         <div style="flex:2"><p>{{ item.item.name }}</p></div>
-                        <div style="flex:1"><p>₹{{ item.item.price|floatformat:2 }}</p></div>
+                        <div style="flex:1"><p>${{ item.item.price|floatformat:2 }}</p></div>
                         <div style="flex:1"><p>x{{ item.quantity }}</p></div>
                     </div>
                 {% endfor %}
